@@ -37,9 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
     'catalog',
     'rest_framework',
-    'django-filters'
+    
 ]
 
 MIDDLEWARE = [
@@ -51,8 +52,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'catalog.middleware.AESEncryptResponseMiddleware',
+    
 ]
-
 ROOT_URLCONF = 'shop.urls'
 
 TEMPLATES = [
